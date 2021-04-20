@@ -9,6 +9,7 @@ int tail=1;
 int legs=2;
 int beak=1;
 int teeth=0;
+int feathers=500;
 };
 
 class Bird : public Animal {
@@ -25,7 +26,8 @@ Bird bird;
 cout << "A bird has " << bird.legs << " legs." << endl;
 cout << "A bird has " << bird.tail << " tail." << endl;
 cout << "A bird has " << bird.beak << " beak." << endl;
-cout << "A bird has " << bird.teeth << " teeth." << endl
+cout << "A bird has " << bird.teeth << " teeth." << endl;
+cout << "A bird has " << bird.feathers << " feathers and can fly." << endl;
 cout << "Bird ";
 bird.voiceSound();
 return 0;
