@@ -7,6 +7,8 @@ string name = "";
 public:
 int tail=1;
 int legs=4;
+int teeth=42;
+int beak=0;
 };
 
 class Dog : public Animal {
@@ -22,6 +24,9 @@ int main() {
 Dog dog;
 cout << "Dog has " << dog.legs << " legs." << endl;
 cout << "Dog has " << dog.tail << " tail." << endl;
+cout << "A dog has " << dog.teeth << " teeth." << endl;
+cout << "A dog has " << dog.beak << " beak." << endl;
+
 cout << "Dog ";
 dog.voiceSound();
 return 0;
