@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Animal {
+
+string name = "";
+public:
+int tail=1;
+int legs=2;
+int beak=1;
+int teeth=0;
+};
+
+class Bird : public Animal {
+public:
+void voiceSound()
+{
+cout << "Chirps";
+}
+};
+
+int main() {
+
+Bird bird;
+cout << "A bird has " << bird.legs << " legs." << endl;
+cout << "A bird has " << bird.tail << " tail." << endl;
+cout << "A bird has " << bird.beak << " beak." << endl;
+cout << "A bird has " << bird.teeth << " teeth." << endl
+cout << "Bird ";
+bird.voiceSound();
+return 0;
+}
