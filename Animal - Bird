@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Animal {
+class Reptile {
 
 string name = "";
 public:
@@ -12,7 +12,7 @@ int teeth=0;
 int feathers=500;
 };
 
-class Bird : public Animal {
+class Bird : public Reptile {
 public:
 void voiceSound()
 {
