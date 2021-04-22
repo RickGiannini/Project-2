@@ -8,10 +8,18 @@ public:
 int tail=1;
 int legs=4;
 int teeth=42;
-int beak=0;
 };
 
-class Dog : public Mammal {
+class Reptile {
+
+string name = "";
+public:
+int tail=1;
+int legs=2;
+int beak=1;
+};
+
+class Dog : public Mammal{
 public:
 void voiceSound()
 {
@@ -19,15 +27,29 @@ cout << "Barks";
 }
 };
 
+class Bird : public Reptile{
+public:
+void voiceBirdySound()
+{
+cout << "Chirps";
+}
+};
+
 int main() {
 
 Dog dog;
-cout << "Dog has " << dog.legs << " legs." << endl;
-cout << "Dog has " << dog.tail << " tail." << endl;
+cout << "A dog has " << dog.legs << " legs." << endl;
+cout << "A dog has " << dog.tail << " tail." << endl;
 cout << "A dog has " << dog.teeth << " teeth." << endl;
-cout << "A dog has " << dog.beak << " beak." << endl;
 
 cout << "Dog ";
-dog.voiceSound();
-return 0;
+dog.voiceSound(); 
+
+Bird bird; 
+cout << "A bird has " << bird.legs << " legs." << endl;
+cout << "A bird has " << bird.tail << " tail." << endl;
+cout << "A bird has " << bird.beak << " beak." << endl;
+
+cout << "Bird ";
+bird.voiceBirdySound();
 }
